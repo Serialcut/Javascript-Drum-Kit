@@ -1,0 +1,60 @@
+:root {
+  --border-common: .4rem solid black;
+  --common-radius: .5rem;
+  --common-font-size: 1.5rem;
+  --common-color: white;
+  --transition-common: all .07s ease;
+}
+
+html {
+  font-size: 10px;
+  background: url('./background.jpg') bottom center;
+  background-size: cover;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.keys {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.key {
+  border: var(--border-common);
+  border-radius: var(--common-radius);
+  margin: 1rem;
+  font-size: var(--common-font-size);
+  padding: 1rem .5rem;
+  transition: var(--transition-common);
+  width: 10rem;
+  text-align: center;
+  color: var(--common-color);
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
+
